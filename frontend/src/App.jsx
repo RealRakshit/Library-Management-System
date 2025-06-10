@@ -6,6 +6,7 @@ import {Routes,Route} from "react-router-dom";
 import { AllBooks } from './pages/AllBooks';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
+import Orders from './pages/Order';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/all-books" element={<AllBooks/>} />
           <Route path="/LogIn" element={<LogIn/>} />
           <Route path="/SignUp" element={<SignUp/>} />
+          <Route path="/orders" element={<Orders/>} />
         </Routes>
         <Footer/>
       

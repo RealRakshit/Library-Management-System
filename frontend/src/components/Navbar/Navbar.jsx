@@ -10,11 +10,12 @@ const Navbar = () => {
     const links = [
       { title: "Home", link: "/" },
       { title: "All Books", link: "/all-books" },
+      { title: "Orders", link: "/orders" },
     ];
 
         const isLoggedIn=useSelector((state)=>state.auth.isLoggedIn);
         if(isLoggedIn===false){
-          links.splice(1,1);
+          links.splice(1,2);
         }
 
     const handleLogout = () => {
